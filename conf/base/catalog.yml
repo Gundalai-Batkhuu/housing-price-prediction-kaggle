@@ -1,0 +1,25 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+
+raw_train:
+    type: pandas.CSVDataSet
+    filepath: data/01_raw/train.csv
+
+raw_test:
+    type: pandas.CSVDataSet
+    filepath: data/01_raw/test.csv
+
+data_dictionary:
+    type: json.JSONDataSet
+    filepath: data/data_dictionary.json
+
+clean_data:
+    type: pandas.CSVDataSet
+    filepath: data/03_primary/clean_data.csv
+
+feature_category_dictionary:
+    type: json.JSONDataSet
+    filepath: data/feature_category_dictionary.json
+
